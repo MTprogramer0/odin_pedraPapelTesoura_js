@@ -7,7 +7,7 @@ const game = () => {
 const randomNumber = Math.floor(Math.random() * 3) + 1;
 const valuePer = valuePerson();
 
-if ((valuePer ==! "tesoura") || (valuePer ==! "papel") || (valuePer ==! "pedra")) { 
+if ((valuePer !== "tesoura") || (valuePer !== "papel") || (valuePer !== "pedra")) { 
     alert("Você digitou um valor diferente de pedra, papel ou tesoura!!!");
      return game();
 };
