@@ -4,10 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Jogo Pedra papel tesoura no console</h1>
 
+    <nav>
+        <h1>Pedra, Papel e Tesoura</h1>
+        <button class="menu-hambur">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+   <div class="menu">
+      <h1>Opções</h1>
+      <div class="option" id="button_colors" role="button" tabindex="0" aria-label="Escolher cores do tema">
+        <p>Colors</p>
+        <div class="container_colors">
+         <button class="color blue"></button>
+         <button class="color red"></button>
+         <button class="color yellow"></button>
+         <button class="color green"></button>
+        </div>
+    </div> 
+
+   <button class="option" id="button-creditos">Créditos</button>
+
+   <button class="option" id="button-comoJogarO">Como jogar ?</button>
+   </div>
+
+  <div class="container-creditos">
+    <button id="exit-creditos">x</button>
+    <h1>Creditos</h1>
+    <p>Mtprogramer0</p>
+     <p>The Odin Project</p>
+   </div>
+
+   <div class="container-comoJogar">
+    <button id="exit-comoJogar">x</button>
+    <h1>Como Jogar?</h1>
+    <p>Você escolhe entre pedra, papel ou tesoura.<br>
+     Então o computador também escolhe<br> entre pedra papel e tesoura:<br>
+    - Pedra ganha de tesoura;<br>
+    - Tesoura ganha de papel<br>
+    - Pepel ganha de pedra<br>
+    Caso os dois escolham a mesma opção<br>
+    haverá um empate;<br>
+   !! Bom jogo!!<br>
+   Caso queira saber mais:<br> <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors" target="_blank" rel="noopener noreferrer">Pedra Papel Tesoura Wikipedia</a>
+    </p>
+   </div>
+
+   <div class="box-exit"></div>
+
+   <section class="section-inicio" >
+     <div class="inicio-content">
+
+        <div class="inicio-container-image">
+           <img src="/assets/logo.png" alt="logo não carregada...">
+        </div>
+
+       <div class="inicio-container-buttons">
+          <button id="button-jogar">Jogar</button>
+          <p id="button-comoJogarI">Como jogar ?</p>
+        </div>
+
+     </div>
+   </section>
+
+  <section class="section-cards">
+    <h1>Escolha entre: </h1>
+
+    <div class="container-cards">
+      <div class="card-section">
+        <img src="/assets/pedra.png" alt="foto de mão em forma de pedra">
+        <p>Pedra</p>
+      </div>
+       <div class="card-section">
+        <img src="/assets/papel.png" alt="foto de mão em forma de papel">
+        <p>Papel</p>
+      </div>
+       <div class="card-section">
+        <img src="/assets/tesoura.png" alt="foto de mão em forma de tesoura">
+        <p>Tesoura</p>
+      </div>
+    </div>
+
+    <h3 id="exit-cards">Voltar &#8617;</h3>
+  </section>
+
+  <section class="section-result">
+
+    <h1 class="title-result"></h1>
+
+    <div class="container-result">
+      <img src="" alt="">
+      <h1>x</h1>
+      <img src="" alt="">
+    </div>
+    <div class="container-buttons-result">
+      <button id="try-again-result">Jogar Novamente</button>
+      <h3 id="exit-result">Voltar ao início &#8617;</h3>
+    </div>
+
+  </section>
+   
     <script src="game.js"></script>
 </body>
 </html>
