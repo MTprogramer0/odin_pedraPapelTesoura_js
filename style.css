@@ -537,3 +537,15 @@ section {
  opacity: 0;
  visibility: hidden;
 }
+
+
+@media (min-width: 768px) {
+ .inicio-container-image img {
+  width: 700px;
+ }
+
+ .card-section {
+ width: 20%;
+ margin: 30px;
+ }
+}
